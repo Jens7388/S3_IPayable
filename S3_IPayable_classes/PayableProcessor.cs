@@ -6,8 +6,8 @@ namespace S3_IPayable_classes
 {
     public class PayableProcessor
     {
-        private Account salesAccount;
-        private Account expensesAccount;
+        protected Account salesAccount;
+        protected Account expensesAccount;
 
         public PayableProcessor(Account salesAccount, Account expensesAccount)
         {
@@ -15,7 +15,7 @@ namespace S3_IPayable_classes
             SalesAccount = salesAccount;
         }
 
-        public Account SalesAccount
+        public virtual Account SalesAccount
         {
             get
             {
@@ -28,7 +28,7 @@ namespace S3_IPayable_classes
             }
         }
 
-        public Account ExpensesAccount
+        public virtual Account ExpensesAccount
         {
             get
             {

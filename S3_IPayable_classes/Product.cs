@@ -6,8 +6,8 @@ namespace S3_IPayable_classes
 {
     public class Product
     {
-        private string name;
-        private decimal unitPrice;
+        protected string name;
+        protected decimal unitPrice;
 
         public Product(string name, decimal unitPrice)
         {
@@ -15,7 +15,7 @@ namespace S3_IPayable_classes
             UnitPrice = unitPrice;
         }
 
-        public string Name
+        public virtual string Name
         {
             get
             {
@@ -28,7 +28,7 @@ namespace S3_IPayable_classes
             }
         }
 
-        public decimal UnitPrice
+        public virtual decimal UnitPrice
         {
             get
             {

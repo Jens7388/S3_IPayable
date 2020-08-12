@@ -7,13 +7,13 @@ namespace S3_IPayable_classes
 {
     public class Account
     {
-        private decimal balance;
+        protected decimal balance;
         public Account(decimal balance)
         {
             Balance = balance;
         }
 
-        public decimal Balance
+        public virtual decimal Balance
         {
             get
             {

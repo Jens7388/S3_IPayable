@@ -40,7 +40,6 @@ namespace S3_IPayable_classes
             {
                 totalPrice += (Convert.ToDecimal(product.Value) * product.Key.UnitPrice);
             }
-
             return totalPrice;
         }
     }
