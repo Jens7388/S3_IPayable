@@ -40,6 +40,7 @@ namespace S3_IPayable_classes
                 expensesAccount = value;
             }
         }
+
         public virtual bool IsProcessed { get; set; }
 
         public virtual void Process(List<IPayable> payables)

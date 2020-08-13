@@ -70,6 +70,7 @@ namespace S3_IPayable_classes
                 salaryCode = value;
             }
         }
+
         public override decimal GetAmount()
         {
             switch(salaryCode)

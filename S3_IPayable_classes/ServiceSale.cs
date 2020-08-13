@@ -25,6 +25,7 @@ namespace S3_IPayable_classes
                 amount = value;
             }
         }
+
         public override decimal GetAmount()
         {
             return amount;

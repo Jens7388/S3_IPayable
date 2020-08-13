@@ -15,6 +15,7 @@ namespace S3_IPayable
                 new ServiceSale(250, 1, DateTime.Now),
                 new ProductSale(new Dictionary<Product, int>() { {new Product("ting", 690), 5} },  1, DateTime.Now),
             };
+
             PayableProcessor payableProcessor = new PayableProcessor(new Account(0), new Account(0));
             payableProcessor.Process(payables);
             Console.WriteLine($"Sales account: {payableProcessor.SalesAccount.Balance}");

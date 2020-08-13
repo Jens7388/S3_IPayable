@@ -8,6 +8,7 @@ namespace S3_IPayable_classes
     public class Account
     {
         protected decimal balance;
+
         public Account(decimal balance)
         {
             Balance = balance;
@@ -29,6 +30,7 @@ namespace S3_IPayable_classes
         public void Deposit(decimal amount) {
              balance += amount;
         }
+
         public void Withdraw(decimal amount)
         {
             balance -= amount;
