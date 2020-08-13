@@ -41,18 +41,7 @@ namespace S3_IPayable_classes
             }
         }
 
-        public bool IsProcessed
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public virtual bool IsProcessed { get; set; }
 
         public virtual decimal GetAmount()
         {

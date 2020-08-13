@@ -6,7 +6,7 @@ namespace S3_IPayable_classes
 {
     public interface IPayable
     {
-        bool IsProcessed { get; set; }
-        decimal GetAmount();
+        public abstract bool IsProcessed { get; set; }
+        public abstract decimal GetAmount();
     }
 }
