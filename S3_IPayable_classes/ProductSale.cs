@@ -32,6 +32,9 @@ namespace S3_IPayable_classes
             productQuantities.Add(product, quantity);
         }
 
+        /// <summary>
+        /// Returns the total price of each product 
+        /// </summary>
         public override decimal GetAmount()
         {
             decimal totalPrice = 0;

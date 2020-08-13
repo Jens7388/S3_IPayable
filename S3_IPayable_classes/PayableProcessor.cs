@@ -43,6 +43,9 @@ namespace S3_IPayable_classes
 
         public virtual bool IsProcessed { get; set; }
 
+        /// <summary>
+        /// Checks if the payables are sales or expenses
+        /// </summary>
         public virtual void Process(List<IPayable> payables)
         {
             foreach(IPayable payable in payables)
